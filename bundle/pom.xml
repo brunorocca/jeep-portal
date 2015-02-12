@@ -19,6 +19,22 @@
     <name>Portal Jeep Bundle</name>
 
     <dependencies>
+    	 <dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.day.cq.wcm</groupId>
+			<artifactId>cq-wcm-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.day.cq</groupId>
+			<artifactId>cq-commons</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.day.cq.dam</groupId>
+			<artifactId>cq-dam-api</artifactId>
+		</dependency>
         <dependency>
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.compendium</artifactId>
@@ -120,16 +136,6 @@
                     </instructions>
                 </configuration>
             </plugin>
-            <!-- 
-            <plugin>
-                <groupId>org.apache.sling</groupId>
-                <artifactId>maven-sling-plugin</artifactId>
-                <configuration>
-                    <slingUrl>http://${crx.host}:${crx.port}/apps/jeep-portal/install</slingUrl>
-                    <usePut>true</usePut>
-                </configuration>
-            </plugin>
-             -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
